@@ -1,11 +1,12 @@
 <!---COMIENZO HTML--->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/script.js"></script>
     <title>Home</title>
 </head>
 
@@ -24,9 +25,9 @@
     <main>
         <section><!--SECCION DE BOTONES-->
             <div class="buttons">
-                <a href="pagina1.html" class="button">News</a>
-                <a href="pagina2.html" class="button">KBeuty</a>
-                <a href="../html/catalogo.html" class="button">Catalogo</a>
+                <a href="../php/formulario.php" class="button">Solicitar Producto</a>
+                <a href="../php/promociones.php" class="button">Promociones</a>
+                <a href="../php/catalogo.php" class="button">Catalogo</a>
             </div>
         </section>
         <br>
@@ -42,26 +43,7 @@
 
             <!--BOTON DE VER MAS-->
             <div class="buttons">
-                <a href="pagina1.html" class="button">Ver más</a>
-            </div>
-        </section>
-
-        <!--SECCION DE PRODUCTOS EN DESCUENTOS-->
-        <section class="discount-products">
-            <h2>Productos en Descuento</h2>
-            <div class="product-images-discount">
-                <div class="product">
-                    <img src="../img/perfumes/locion1.jpg" alt="Producto 1">
-                    <button class="add-to-cart-button">Añadir al carrito</button>
-                </div>
-                <div class="product">
-                    <img src="../img/perfumes/locion2.jpg" alt="Producto 2">
-                    <button class="add-to-cart-button">Añadir al carrito</button>
-                </div>
-                <div class="product">
-                    <img src="../img/perfumes/locion3.jpg" alt="Producto 3">
-                    <button class="add-to-cart-button">Añadir al carrito</button>
-                </div>
+                <a href="../php/catalogo.php" class="button">Ver más</a>
             </div>
         </section>
 
@@ -79,5 +61,4 @@
     <!--MENCION DEL JAVASCRIPT -->
     <script src="../js/script.js"></script>
 </body>
-
 </html>
