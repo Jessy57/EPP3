@@ -26,10 +26,15 @@ include("template/slider.php");
 
     <!-- Formulario de contacto (inicialmente oculto) -->
     <div id="contactForm" class="mt-4">
-        <h2>Formulario de Contacto</h2>
+        <h1>Rellene el formulario de Contacto</h1>
         <form>
+
             <div class="form-group">
-                <label for="nombre">Nombre</label>
+                <label for="user">Usuario</label>
+                <input type="text" class="form-control" id="user" placeholder="Tu usuario">
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombres y Apellidos</label>
                 <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
             </div>
             <div class="form-group">
@@ -49,7 +54,7 @@ include("template/slider.php");
 
     <!-- Sección de ubicación y contacto -->
     <div id="locationSection">
-        <h2>Ubicación y Contacto</h2>
+        <h1>Ubicación y Contacto</h1>
         <div id="locationInfo">
             <p><strong>Dirección:</strong> Estamos ubicados en Centro Comercial Managua Mod.A#40 frente al Food Court.</p>
             <p><strong>Teléfono:</strong> +123 456 789</p>

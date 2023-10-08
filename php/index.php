@@ -14,8 +14,11 @@
 include("template/nav.php");
 include("template/slider.php");
 ?>
+<!---Seccion de catalogo - colecciones----> 
+<h1>Revisa nuestras colecciones y catalogo </h1>
 
-<!-- Modales de Promoción, Catálogo y Colecciones -->
+<!-- Modales de Promoción -->
+<H1>¡Productos en descuento!</H1>
 <div class="container my-5">
     <div class="row">
         <div class="col-md-4 mb-4">
@@ -50,16 +53,35 @@ include("template/slider.php");
         </div>
     </div>
 </div>
+
 <!-- Sección de Opiniones de Influencers -->
-<div class="card text-bg-dark" style="max-width: 400px;">
-  <img src="../IMG/PERSON/influencer1.png" class="card-img" alt="..." style="width: 100%; margin: 10px 0;">
+<h1>Mira algunas de las reseñas de nuestros influencers!</h1>
+<div class="card card-influencer">
+  <img src="../IMG/PERSON/influencer1.png" class="card-img" alt="...">
   <div class="card-img-overlay">
-    <h5 class="card-title">Card title</h5>
+    <h5 class="card-title">Laura</h5>
     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
     <p class="card-text"><small>Last updated 3 mins ago</small></p>
   </div>
 </div>
 
+<div class="card card-influencer">
+  <img src="../IMG/PERSON/influencer2.png" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">Laura</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text"><small>Last updated 3 mins ago</small></p>
+  </div>
+</div>
+
+<div class="card card-influencer">
+  <img src="../IMG/PERSON/influencer2.png" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">Laura</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text"><small>Last updated 3 mins ago</small></p>
+  </div>
+</div>
 <!-- Pie de página y otros elementos -->
 <?php
 include("template/footer.php");
