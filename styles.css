@@ -1,0 +1,172 @@
+/* Fondo principal */
+body {
+  background-color: #faeff1;
+  /* Un tono suave de gris */
+}
+
+
+/*NAV*/
+/* Estilo para la barra de navegación */
+.bg-light {
+  background-color: #80558C!important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+}
+.navbar-nav .nav-link {
+  color: #F4EFEA; /* Color de texto para los enlaces */
+  margin-right: 20px; /* Espacio entre los enlaces */
+  position: relative; /* Añadir posición relativa para el efecto de línea */
+  text-decoration: none; /* Quitar subrayado del enlace */
+}
+
+/* Estilo para la línea de abajo en el estado normal */
+.navbar-nav .nav-link::before {
+  content: ""; /* Contenido vacío para la línea */
+  position: absolute; /* Posición absoluta para la línea */
+  bottom: 0; /* Colocar la línea en la parte inferior del enlace */
+  left: 0; /* Iniciar la línea desde la izquierda del enlace */
+  width: 0; /* Iniciar con una anchura de cero */
+  height: 2px; /* Grosor de la línea */
+  background-color: #F4EFEA; /* Color de la línea */
+  transition: width 0.3s; /* Transición para la anchura de la línea */
+}
+
+/* Estilo para la línea de abajo en el estado de hover */
+.navbar-nav .nav-link:hover::before {
+  width: 100%; /* Extender la línea al 100% del ancho del enlace */
+}
+
+/*CARROUSEL / SLIDER*/
+/* Establece una altura fija para las imágenes en el slider */
+.carousel-item img {
+  width: 100%;
+  /* Ajusta el ancho según tus necesidades */
+  height: auto;
+  max-height: 400px;
+  /* Ajusta la altura máxima según tus necesidades */
+  display: block;
+  margin: 0 auto;
+}
+
+/*PRODUCTO MEJOR - INDEX*/
+/* Estilo para las tarjetas de productos con sombra */
+.card {
+  transition: transform 0.2s ease-in-out;
+  /* Transición suave al hacer hover */
+  position: relative;
+  height: auto; /* Altura automática */
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  /* Sombra pronunciada, ajusta los valores según tu preferencia */
+}
+.btn-primary {
+  color: #fff;
+  background-color: #e286dc;
+  border-color: #ffffff;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #89539d;
+  border-color: #ffffff;
+}
+.card-img, .card-img-bottom, .card-img-top {
+    width: auto;
+    /* Ancho automático para mantener el tamaño original de la imagen */
+    max-height: 200px; /* Ajusta la altura máxima según tu preferencia */
+    height: auto;
+    /* Ajusta automáticamente la altura para mantener la proporción */
+    object-fit: contain;
+    /* Ajusta la imagen dentro del contenedor sin cambiar su tamaño */
+    display: block;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  /* Escala todo el card al hacer hover */
+}
+
+/* Estilo para el título con animación constante */
+.animated-text {
+  background-color: #007BFF;
+  border-radius: 25px;
+  animation: pulse 1.5s infinite alternate;
+  /* Animación de cambio de tamaño constante */
+  color: #ffffff; /* Color agradable */
+  text-align: center; /* Centra el texto horizontalmente */
+  font-size: 28px; /* Tamaño de fuente personalizado */
+  margin-top: 20px; /* Espacio superior */
+  margin-bottom:20px;
+  padding: 1%;
+}
+
+
+/*CONTACTO*/
+/* Encabezado y botón de contacto */
+.jumbotron {
+  background-color: #C9BBCF;
+  /* Azul brillante */
+  color: white;
+  /* Texto en blanco */
+  padding: 30px;
+}
+
+/* Estilo para el botón de contacto */
+#contactButton {
+  background-color: #e286dc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  /* Añade un poco de espacio interior al botón */
+  border-radius: 5px;
+  /* Añade bordes redondeados al botón */
+  animation: pulse 1s infinite alternate;
+  /* Animación de cambio de tamaño */
+}
+
+/* Estilo para el formulario de contacto */
+#contactForm {
+  display: none;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animación de cambio de tamaño para el botón */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+
+/* Estilo para la sección de ubicación y contacto */
+#locationSection {
+  background-color: #C9BBCF; /* Fondo gris claro */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la información de ubicación y contacto */
+#locationInfo {
+  margin-top: 20px;
+}
+
+/* Estilo para el mapa de Google Maps */
+#googleMapContainer {
+  height: 400px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Espacio en el final de la página */
+#bottomSpace {
+  height: 50px;
+}
